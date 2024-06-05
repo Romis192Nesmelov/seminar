@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <site_title>Ai Seminar</site_title>
+    <record_button_text>Записаться на семинар</record_button_text>
+    <content>
+        <icons>
+            <top>Уникальная</top>
+            <bottom>комплексная программа</bottom>
+        </icons>
+        <icons>
+            <top>Бесценный опыт</top>
+            <bottom>общения с ведущими экспертами</bottom>
+        </icons>
+        <icons>
+            <top>Мощный</top>
+            <bottom>импульс для вашего бизнеса</bottom>
+        </icons>
+        <pictures>
+            <top>Уникальная программа</top>
+            <bottom>Погрузитесь в мир современных ИИ-решений и экспертизы в области цифровизации.</bottom>
+        </pictures>
+        <pictures>
+            <top>Профессиональный диалог</top>
+            <bottom>Оцените потенциал применения ИИ в вашей компании вместе с ведущими экспертами.</bottom>
+        </pictures>
+        <pictures>
+            <top>Стратегические инициативы</top>
+            <bottom>Сформулируйте основные проекты в ИИ-сфере, готовые к запуску после семинара.</bottom>
+        </pictures>
+        <experts>
+            <name>Александр</name>
+            <title>Главный эксперт по цифровизации</title>
+            <telegram>@seminar</telegram>
+            <whatsapp>+74951234567</whatsapp>
+        </experts>
+        <experts>
+            <name>Екатерина</name>
+            <title>Эксперт по ИИ и инновациям</title>
+            <telegram>@seminar</telegram>
+            <whatsapp>+74951234567</whatsapp>
+        </experts>
+        <experts>
+            <name>Дмитрий</name>
+            <title>Стратег по развитию бизнеса</title>
+            <telegram>@seminar</telegram>
+            <whatsapp>+74951234567</whatsapp>
+        </experts>
+        <experts>
+            <name>Ольга</name>
+            <title>Аналитик по технологиям</title>
+            <telegram>@seminar</telegram>
+            <whatsapp>+74951234567</whatsapp>
+        </experts>
+        <questions>
+            <question>Что такое стратегический семинар по ИИ?</question>
+            <answer>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor lacus vel urna facilisis malesuada. Maecenas lacinia tortor ac odio faucibus ornare. Praesent condimentum varius volutpat. Nulla accumsan felis in sapien aliquam, sed malesuada diam aliquam. Sed at convallis ipsum. Aliquam erat volutpat. Mauris sollicitudin libero quis magna laoreet efficitur. Donec cursus nibh vel varius dictum. Sed sed eros et leo varius facilisis id id elit.</answer>
+        </questions>
+        <questions>
+            <question>Какие выгоды принесет участие в семинаре?</question>
+            <answer>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor lacus vel urna facilisis malesuada. Maecenas lacinia tortor ac odio faucibus ornare. Praesent condimentum varius volutpat. Nulla accumsan felis in sapien aliquam, sed malesuada diam aliquam. Sed at convallis ipsum. Aliquam erat volutpat. Mauris sollicitudin libero quis magna laoreet efficitur. Donec cursus nibh vel varius dictum. Sed sed eros et leo varius facilisis id id elit.</answer>
+        </questions>
+        <questions>
+            <question>Кто ведет семинар по ИИ?</question>
+            <answer>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor lacus vel urna facilisis malesuada. Maecenas lacinia tortor ac odio faucibus ornare. Praesent condimentum varius volutpat. Nulla accumsan felis in sapien aliquam, sed malesuada diam aliquam. Sed at convallis ipsum. Aliquam erat volutpat. Mauris sollicitudin libero quis magna laoreet efficitur. Donec cursus nibh vel varius dictum. Sed sed eros et leo varius facilisis id id elit.</answer>
+        </questions>
+        <questions>
+            <question>Что я получу по окончанию семинара?</question>
+            <answer>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor lacus vel urna facilisis malesuada. Maecenas lacinia tortor ac odio faucibus ornare. Praesent condimentum varius volutpat. Nulla accumsan felis in sapien aliquam, sed malesuada diam aliquam. Sed at convallis ipsum. Aliquam erat volutpat. Mauris sollicitudin libero quis magna laoreet efficitur. Donec cursus nibh vel varius dictum. Sed sed eros et leo varius facilisis id id elit.</answer>
+        </questions>
+        <questions>
+            <question>Как записаться на семинар?</question>
+            <answer>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor lacus vel urna facilisis malesuada. Maecenas lacinia tortor ac odio faucibus ornare. Praesent condimentum varius volutpat. Nulla accumsan felis in sapien aliquam, sed malesuada diam aliquam. Sed at convallis ipsum. Aliquam erat volutpat. Mauris sollicitudin libero quis magna laoreet efficitur. Donec cursus nibh vel varius dictum. Sed sed eros et leo varius facilisis id id elit.</answer>
+        </questions>
+    </content>
+    <contacts>
+        <phone>+7 (495) 123-4567</phone>
+        <email>info@seminar.ru</email>
+    </contacts>
+</root>

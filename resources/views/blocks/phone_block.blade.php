@@ -1,0 +1,1 @@
+<i class="icon-phone2"></i><a href="tel:+7{{ substr(str_replace(['-','(',')','+',' '],'',$phone) ,1) }}">{!! isset($icon) && $icon ? '<i class="'.$icon.(isset($addClass) && $addClass ? ' '.$addClass : '').'"></i>' : $phone !!}</a>

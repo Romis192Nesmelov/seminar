@@ -1,0 +1,1 @@
+<i class="icon-envelop5 ms-2"></i><a class="mail-block" href="mailto:{{ $email }}">{!! isset($icon) && $icon ? '<i class="'.$icon.(isset($addClass) && $addClass ? ' '.$addClass : '').'"></i> '.$email : $email !!}</a>
