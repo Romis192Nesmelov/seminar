@@ -10,9 +10,8 @@ body {
     font-size: 14px;
 }
 
-hr,
-form hr {
-    border: 1px solid var(--main-color) !important;
+hr {
+    border: 1px solid var(--main-color);
     margin: clamp(20px, 2vw, 50px) 0;
     opacity: 1;
 }
@@ -220,9 +219,13 @@ p:last-child {
     margin-right: 3px;
 }
 
-.section.color hr {
+.section.color .container hr {
     border-color: white;
     margin-top: 20px;
+}
+
+.section.color form hr {
+    border-color: var(--main-color) !important;
 }
 
 .button-cover {

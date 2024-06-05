@@ -41,6 +41,7 @@
 <x-modal id="request-modal" head="Напишите нам!">
     <div class="pt-0 ps-3 pe-3 pb-4 w-100 d-flex flex-column justify-content-center">
         <h2 class="text-center">Оставьте заявку<br>на проведение семинара</h2>
+        <hr class="mt-1 mb-3">
         <form id="request-form-modal" class="w-100" action="{{ route('online_request') }}" method="post">
         @csrf
             @include('blocks.request_block')
