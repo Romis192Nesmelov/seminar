@@ -102,7 +102,7 @@ p:last-child {
 }
 
 #logos {
-    width: clamp(200px, 20vw, 350px);
+    width: clamp(300px, 20vw, 400px);
 }
 
 #logos img {

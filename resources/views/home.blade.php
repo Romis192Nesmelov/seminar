@@ -20,8 +20,9 @@
                     'buttonText' => $settings->record_button_text
                 ])
                 <div id="logos" class="row mt-3 mt-lg-5">
-                    <div class="col-12 col-md-6 text-center"><img src="{{ asset('images/logo_4cio_white.svg') }}"></div>
-                    <div class="col-12 col-md-6 text-center"><img src="{{ asset('images/logo_academy_white.svg') }}"></div>
+                    @include('blocks.header_logo_block',['logo' => 'logo_4cio_white.svg','scroll' => '4CIO'])
+                    @include('blocks.header_logo_block',['logo' => 'logo_academy_white.svg','scroll' => 'academy'])
+                    @include('blocks.header_logo_block',['logo' => 'logo_itm_white.svg','scroll' => 'academy'])
                 </div>
             </div>
             <div class="col-12 col-md-6 mt-4 mt-lg-0 mb-3 text-center">
@@ -43,8 +44,10 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="logo-about"><img src="{{ asset('images/logo_4cio_gray.svg') }}" /></div>
+            <div class="col-12 col-md-6" data-scroll-destination="4CIO">
+                <div class="logo-about">
+                    <a href="https://4cio.ru/" target="_blank"><img src="{{ asset('images/logo_4cio_gray.svg') }}" /></a>
+                </div>
                 <h2>Клуб 4CIO</h2>
                 <ul>
                     <li>основан в 2003 году</li>
@@ -53,9 +56,14 @@
                     <li>проводит свыше 50 мероприятий различного уровня в год</li>
                 </ul>
             </div>
-            <div class="col-12 col-md-6">
-                <div class="logo-about"><img src="{{ asset('images/logo_academy_black.svg') }}" /></div>
-                <h2>Президентская академия</h2>
+            <div class="col-12 col-md-6" data-scroll-destination="academy">
+                <div class="logo-about">
+                    <a href="https://mbacio.ru/" target="_blank">
+                        <img src="{{ asset('images/logo_academy_black.svg') }}" />
+                        <img src="{{ asset('images/logo_itm_blue.svg') }}" />
+                    </a>
+                </div>
+                <h2>Школа ИТ-менеджмента Президентской академии</h2>
                 <ul>
                     <li>основана свыше 100 лет назад</li>
                     <li>национальная школа государственного управления</li>
