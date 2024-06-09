@@ -1,3 +1,4 @@
 git clone git@github.com:Romis192Nesmelov/seminar.git %local_dir%
-composer install
+run "composer install"
 create .env in root project
+specify the correct MAIL_TO in .env file
