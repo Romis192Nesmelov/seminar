@@ -209,7 +209,7 @@
                 <div class="rounded-frame form w-100 p-4 bg-light">
                     <form id="request-form-contacts" class="w-100" action="{{ route('online_request') }}" method="post">
                         @csrf
-                        <h2 class="text-center">оставьте заявку<br>на проведение семинара</h2>
+                        <h2 class="text-center">{{ $settings->form_request_head }}</h2>
                         <hr class="mt-1 mb-3">
                         @include('blocks.request_block')
                     </form>

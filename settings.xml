@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
     <site_title>Ai Seminar</site_title>
-    <record_button_text>Записаться на семинар</record_button_text>
+    <record_button_text>Оставить заявку</record_button_text>
+    <form_request_head>Форма обратной связи</form_request_head>
     <content>
         <icons>
             <top>Уникальная</top>
@@ -99,15 +100,15 @@
             <name>Сергей</name>
             <family>Кирюшин</family>
             <title>Эксперт по ИТ и цифровизации</title>
-            <telegram>@sergey_kiryushin</telegram>
-            <whatsapp>+79259994664</whatsapp>
+            <telegram>@sergey</telegram>
+            <whatsapp>+79251001112</whatsapp>
         </persons>
         <persons>
             <name>Сергей</name>
             <family>Кирюшин</family>
             <title>Эксперт по ИТ и цифровизации</title>
-            <telegram>@sergey_kiryushin</telegram>
-            <whatsapp>+79259994664</whatsapp>
+            <telegram>@sergey</telegram>
+            <whatsapp>+79251001112</whatsapp>
         </persons>
     </contacts>
 </root>
