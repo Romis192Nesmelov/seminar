@@ -31,16 +31,12 @@
             <name>Сергей</name>
             <family>Кирюшин</family>
             <title>Эксперт по ИТ и цифровизации</title>
-            <telegram>@sergey_kiryushin</telegram>
-            <whatsapp>+79259994664</whatsapp>
             <site>https://4cio.ru/people/user/730</site>
         </experts>
         <experts>
             <name>Павел</name>
             <family>Плахотный</family>
             <title>Эксперт по промышленности</title>
-            <telegram>@seminar</telegram>
-            <whatsapp>+74951234567</whatsapp>
             <site>https://4cio.ru/people/user/1823</site>
         </experts>
         <experts>
@@ -95,7 +91,23 @@
         </questions>
     </content>
     <contacts>
-        <phone>+7 (495) 123-4567</phone>
-        <email>info@seminar.ru</email>
+        <main>
+            <phone>+7 (495) 123-4567</phone>
+            <email>info@seminar.ru</email>
+        </main>
+        <persons>
+            <name>Сергей</name>
+            <family>Кирюшин</family>
+            <title>Эксперт по ИТ и цифровизации</title>
+            <telegram>@sergey_kiryushin</telegram>
+            <whatsapp>+79259994664</whatsapp>
+        </persons>
+        <persons>
+            <name>Сергей</name>
+            <family>Кирюшин</family>
+            <title>Эксперт по ИТ и цифровизации</title>
+            <telegram>@sergey_kiryushin</telegram>
+            <whatsapp>+79259994664</whatsapp>
+        </persons>
     </contacts>
 </root>

@@ -177,33 +177,25 @@
             <div class="col-12 col-md-8">
                 <h1>Контакты</h1>
                 <p class="fs-lg-6 text-center text-md-start">
-                    @include('blocks.phone_block',['phone' => $settings->contacts->phone])
-                    @include('blocks.email_block',['email' => $settings->contacts->email])
+                    @include('blocks.phone_block',['phone' => $settings->contacts->main->phone])
+                    @include('blocks.email_block',['email' => $settings->contacts->main->email])
                 </p>
                 <hr>
                 <div class="row">
-                    @for($i=0;$i<(count($settings->content->experts) > 2 ? 2 : count($settings->content->experts));$i++)
+                    @for($i=0;$i<(count($settings->contacts->persons) > 2 ? 2 : count($settings->contacts->persons));$i++)
                         <div class="col-12 col-md-6 row mb-3">
                             <div class="col-12 col-lg-4 mb-md-3">
-                                <div class="photo-frame small">
-                                    <a href="{{ $settings->content->experts[$i]->site }}" target="_blank">
-                                        <img src="{{ asset('images/experts/expert'.($i+1).'.jpg') }}">
-                                    </a>
-                                </div>
+                                <div class="photo-frame small"><img src="{{ asset('images/contacts/contact'.($i+1).'.jpg') }}"></div>
                             </div>
                             <div class="col-12 col-lg-8 d-flex flex-column justify-content-center">
-                                <div class="text-top text-lg-start">
-                                    <a href="{{ $settings->content->experts[$i]->site }}" target="_blank">
-                                        {{ $settings->content->experts[$i]->family.' '.$settings->content->experts[$i]->name }}
-                                    </a>
-                                </div>
+                                <div class="text-top text-lg-start">{{ $settings->contacts->persons[$i]->family.' '.$settings->contacts->persons[$i]->name }}</div>
                                 <div class="text-bottom text-lg-start mb-0">
-                                    <a href="{{ $settings->content->experts[$i]->site }}" target="_blank">{{ $settings->content->experts[$i]->title }}</a>
+                                    {{ $settings->contacts->persons[$i]->title }}
                                     <div>
-                                        <a href="https://wa.me/{{ $settings->content->experts[$i]->whatsapp }}" target="_blank">
+                                        <a href="https://wa.me/{{ $settings->contacts->persons[$i]->whatsapp }}" target="_blank">
                                             <img class="messenger-icon me-1" src="{{ asset('images/whatsapp_icon.svg') }}"/>
                                         </a>
-                                        <a href="https://telegram.im/{{ $settings->content->experts[$i]->telegram }}" target="_blank">
+                                        <a href="https://telegram.im/{{ $settings->contacts->persons[$i]->telegram }}" target="_blank">
                                             <img class="messenger-icon" src="{{ asset('images/telegram_icon.svg') }}"/>
                                         </a>
                                     </div>
