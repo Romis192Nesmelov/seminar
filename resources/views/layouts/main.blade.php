@@ -35,7 +35,7 @@
 <div id="main" data-scroll-destination="home">
     @yield('content')
 </div>
-<div id="footer"><div class="container pb-0">© 2024 {{ env('APP_NAME') }}</div></div>
+<div id="footer"><div class="container pb-0">©{{ date('Y').' '.$settings->footer_text }} </div></div>
 <img id="mail-us-button" data-bs-toggle="modal" data-bs-target="#request-modal" src="{{ asset('images/mail_us_button.svg') }}" />
 
 <x-modal id="request-modal" head="Напишите нам!">
