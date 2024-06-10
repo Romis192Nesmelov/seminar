@@ -144,11 +144,13 @@
         <p>Вашими лекторами/ преподавателями/ ведущими мастер-классов и стратегических сессий будут ведущие эксперты:</p>
         <div id="our-experts" class="owl-carousel">
             @for($i=0;$i<count($settings->content->experts);$i++)
-                <div>
-                    <div class="photo-frame"><img src="{{ asset('images/experts/expert'.($i+1).'.jpg') }}"></div>
-                    <div class="text-top">{{ $settings->content->experts[$i]->name }}</div>
-                    <div class="text-bottom">{{ $settings->content->experts[$i]->title }}</div>
-                </div>
+                <a href="{{ $settings->content->experts[$i]->site }}" target="_blank">
+                    <div>
+                        <div class="photo-frame"><img src="{{ asset('images/experts/expert'.($i+1).'.jpg') }}"></div>
+                        <div class="text-top">{{ $settings->content->experts[$i]->name }}</div>
+                        <div class="text-bottom">{{ $settings->content->experts[$i]->title }}</div>
+                    </div>
+                </a>
             @endfor
         </div>
         @include('blocks.arrow_down_block',['scroll' => 'faq'])
@@ -181,12 +183,20 @@
                     @for($i=0;$i<(count($settings->content->experts) > 2 ? 2 : count($settings->content->experts));$i++)
                         <div class="col-12 col-md-6 row mb-3">
                             <div class="col-12 col-lg-4 mb-md-3">
-                                <div class="photo-frame small"><img src="{{ asset('images/experts/expert'.($i+1).'.jpg') }}"></div>
+                                <div class="photo-frame small">
+                                    <a href="{{ $settings->content->experts[$i]->site }}" target="_blank">
+                                        <img src="{{ asset('images/experts/expert'.($i+1).'.jpg') }}">
+                                    </a>
+                                </div>
                             </div>
                             <div class="col-12 col-lg-8 d-flex flex-column justify-content-center">
-                                <div class="text-top text-lg-start">{{ $settings->content->experts[$i]->name }}</div>
+                                <div class="text-top text-lg-start">
+                                    <a href="{{ $settings->content->experts[$i]->site }}" target="_blank">
+                                        {{ $settings->content->experts[$i]->name }}
+                                    </a>
+                                </div>
                                 <div class="text-bottom text-lg-start mb-0">
-                                    {{ $settings->content->experts[$i]->title }}
+                                    <a href="{{ $settings->content->experts[$i]->site }}" target="_blank">{{ $settings->content->experts[$i]->title }}</a>
                                     <div>
                                         <a href="https://wa.me/{{ $settings->content->experts[$i]->whatsapp }}" target="_blank">
                                             <img class="messenger-icon me-1" src="{{ asset('images/whatsapp_icon.svg') }}"/>

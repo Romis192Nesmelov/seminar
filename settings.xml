@@ -32,24 +32,28 @@
             <title>Главный эксперт по цифровизации</title>
             <telegram>@seminar</telegram>
             <whatsapp>+74951234567</whatsapp>
+            <site>https://yandex.ru</site>
         </experts>
         <experts>
             <name>Екатерина</name>
             <title>Эксперт по ИИ и инновациям</title>
             <telegram>@seminar</telegram>
             <whatsapp>+74951234567</whatsapp>
+            <site>https://yandex.ru</site>
         </experts>
         <experts>
             <name>Дмитрий</name>
             <title>Стратег по развитию бизнеса</title>
             <telegram>@seminar</telegram>
             <whatsapp>+74951234567</whatsapp>
+            <site>https://yandex.ru</site>
         </experts>
         <experts>
             <name>Ольга</name>
             <title>Аналитик по технологиям</title>
             <telegram>@seminar</telegram>
             <whatsapp>+74951234567</whatsapp>
+            <site>https://yandex.ru</site>
         </experts>
         <questions>
             <question>Что такое стратегический семинар по ИИ?</question>
