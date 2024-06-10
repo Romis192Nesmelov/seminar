@@ -28,32 +28,60 @@
             <bottom>Сформулируйте основные проекты в ИИ-сфере, готовые к запуску после семинара.</bottom>
         </pictures>
         <experts>
+            <name>Сергей</name>
+            <family>Кирюшин</family>
+            <title>Эксперт по ИТ и цифровизации</title>
+            <telegram>@sergey_kiryushin</telegram>
+            <whatsapp>+79259994664</whatsapp>
+            <site>https://4cio.ru/people/user/730</site>
+        </experts>
+        <experts>
+            <name>Павел</name>
+            <family>Плахотный</family>
+            <title>Эксперт по промышленности</title>
+            <telegram>@seminar</telegram>
+            <whatsapp>+74951234567</whatsapp>
+            <site>https://4cio.ru/people/user/1823</site>
+        </experts>
+        <experts>
+            <name>Павел</name>
+            <family>Алфёров</family>
+            <title>Эксперт по управлению проектами</title>
+            <telegram>@seminar</telegram>
+            <whatsapp>+74951234567</whatsapp>
+            <site>https://alferov.expert/</site>
+        </experts>
+        <experts>
+            <name>Владимир</name>
+            <family>Определёнов</family>
+            <title>Эксперт по маркетингу</title>
+            <telegram>@seminar</telegram>
+            <whatsapp>+74951234567</whatsapp>
+            <site>https://4cio.ru/people/user/17741</site>
+        </experts>
+        <experts>
             <name>Александр</name>
-            <title>Главный эксперт по цифровизации</title>
+            <family>Усик</family>
+            <title>Эксперт по сельскому хозяйству</title>
             <telegram>@seminar</telegram>
             <whatsapp>+74951234567</whatsapp>
-            <site>https://yandex.ru</site>
+            <site>https://4cio.ru/people/user/749</site>
         </experts>
         <experts>
-            <name>Екатерина</name>
-            <title>Эксперт по ИИ и инновациям</title>
+            <name>Владимир</name>
+            <family>Иванов</family>
+            <title>Эксперт по девелопменту</title>
             <telegram>@seminar</telegram>
             <whatsapp>+74951234567</whatsapp>
-            <site>https://yandex.ru</site>
+            <site>https://4cio.ru/people/user/2683</site>
         </experts>
         <experts>
-            <name>Дмитрий</name>
-            <title>Стратег по развитию бизнеса</title>
+            <name>Денис</name>
+            <family>Турдаков</family>
+            <title>Эксперт по ИИ</title>
             <telegram>@seminar</telegram>
             <whatsapp>+74951234567</whatsapp>
-            <site>https://yandex.ru</site>
-        </experts>
-        <experts>
-            <name>Ольга</name>
-            <title>Аналитик по технологиям</title>
-            <telegram>@seminar</telegram>
-            <whatsapp>+74951234567</whatsapp>
-            <site>https://yandex.ru</site>
+            <site>https://ai.gov.ru/rnd/ic/doverennogo-iskusstvennogo-intellekta-isp-ran/</site>
         </experts>
         <questions>
             <question>Что такое стратегический семинар по ИИ?</question>

@@ -139,6 +139,8 @@ p:last-child {
 #fixed-bar {
     width: 100%;
     height: 40px;
+    display: flex;
+    align-items: center;
     padding-left: 15px;
     position: fixed;
     top: -42px;
@@ -360,7 +362,7 @@ p:last-child {
     display: flex;
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% - 8px),calc(-50% - 50px));
+    transform: translate(calc(-50% - 5px),calc(-50% - 60px));
     position: absolute;
     align-items: center;
     justify-content: space-between;
@@ -452,7 +454,7 @@ p:last-child {
     }
 
     .owl-nav {
-        transform: translate(-50%,calc(-50% - 50px));
+        transform: translate(-50%,calc(-50% - 65px));
     }
 
     .owl-nav button {
@@ -518,6 +520,10 @@ p:last-child {
     #header .arrow-down {
         position: relative;
         margin-top: -50px;
+    }
+
+    .owl-nav {
+        transform: translate(-50%,calc(-50% - 80px));
     }
 }
 

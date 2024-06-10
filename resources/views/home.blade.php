@@ -2,7 +2,7 @@
 
 @section('content')
     <div id="fixed-bar">
-        <div class="container pb-0 d-flex justify-content-left align-items-center">
+        <div class="container pb-0 d-flex justify-content-lg-start justify-content-md-between justify-content-sm-between align-items-center">
             <a data-scroll="home" href="#">@include('blocks.logo_block', ['id' => 'logo-small'])</a>
             @include('blocks.navbar_block', ['id' => 'fixed-nav'])
         </div>
@@ -147,7 +147,9 @@
                 <a href="{{ $settings->content->experts[$i]->site }}" target="_blank">
                     <div>
                         <div class="photo-frame"><img src="{{ asset('images/experts/expert'.($i+1).'.jpg') }}"></div>
-                        <div class="text-top">{{ $settings->content->experts[$i]->name }}</div>
+                        <div class="text-top">
+                            {{ $settings->content->experts[$i]->family}}<br>{{ $settings->content->experts[$i]->name }}
+                        </div>
                         <div class="text-bottom">{{ $settings->content->experts[$i]->title }}</div>
                     </div>
                 </a>
@@ -192,7 +194,7 @@
                             <div class="col-12 col-lg-8 d-flex flex-column justify-content-center">
                                 <div class="text-top text-lg-start">
                                     <a href="{{ $settings->content->experts[$i]->site }}" target="_blank">
-                                        {{ $settings->content->experts[$i]->name }}
+                                        {{ $settings->content->experts[$i]->family.' '.$settings->content->experts[$i]->name }}
                                     </a>
                                 </div>
                                 <div class="text-bottom text-lg-start mb-0">
