@@ -258,8 +258,8 @@ p:last-child {
 }
 
 .btn.btn-primary:hover {
-    opacity: .5;
-    filter: opacity(50%);
+    opacity: .8;
+    filter: opacity(80%);
 }
 
 .form-check-input:checked {
@@ -341,8 +341,8 @@ p:last-child {
 }
 
 .arrow-down > img:hover {
-    opacity: .5;
-    filter: opacity(50%);
+    opacity: .8;
+    filter: opacity(80%);
 }
 
 #header .arrow-down {
@@ -410,8 +410,8 @@ p:last-child {
 }
 
 #mail-us-button:hover {
-    opacity: .5;
-    filter: opacity(50%);
+    opacity: .8;
+    filter: opacity(80%);
 }
 
 #policy-modal .modal-dialog {
