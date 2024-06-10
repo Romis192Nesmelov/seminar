@@ -5,7 +5,7 @@ $(document).ready(function ($) {
 
 const processingForm = (form, resetInputs, callback) => {
     const body = $('body'),
-        agree = $('input[name=i_agree]');
+        agree = $('input[name=agree]');
 
     agree.change(function () {
         let button = $(this).parents('form').find('button[type=submit]');
@@ -63,7 +63,8 @@ const processingForm = (form, resetInputs, callback) => {
                         'phone': '«Телефон»',
                         'email': '«E-mail»',
                         'name': '«Имя»',
-                        'address': '«Адрес»'
+                        'address': '«Адрес»',
+                        'agree': '«Я принимаю…»',
                     };
 
                 $.each(response.errors, function (field, errorMsg) {

@@ -15,7 +15,7 @@
 ])
 
 @include('blocks.checkbox_block',[
-    'name' => 'i_agree',
+    'name' => 'agree',
     'checked' => true,
     'label' => 'Я принимаю условия <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#policy-modal">политики конфиденциальности</a> и даю согласие на обработку персональных данных'
 ])

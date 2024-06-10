@@ -7,9 +7,8 @@
 	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
 	.st2{fill:url(#SVGID_1_);}
 	.st3{fill:none;stroke:url(#SVGID_2_);stroke-width:2;stroke-miterlimit:10;}
-	.st4{fill:#00ECF9;}
-	.st5{font-family:'icomoon';}
-	.st6{font-size:42.1181px;}
+	.st4{enable-background:new    ;}
+	.st5{fill:#00ECF9;}
 </style>
 <g>
 	<g>
@@ -18,18 +17,24 @@
 			<circle class="st1" cx="41" cy="41" r="35"/>
 		</g>
 		<g>
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="36" y1="64.9337" x2="36" y2="5.205">
+			
+				<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="36" y1="12.3476" x2="36" y2="72.0763" gradientTransform="matrix(1 0 0 -1 0 77.2813)">
 				<stop  offset="0" style="stop-color:#09307B"/>
 				<stop  offset="1" style="stop-color:#00ECF9"/>
 			</linearGradient>
 			<circle class="st2" cx="36" cy="36" r="35"/>
-			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="36" x2="72" y2="36">
+			
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="41.2813" x2="72" y2="41.2813" gradientTransform="matrix(1 0 0 -1 0 77.2813)">
 				<stop  offset="0" style="stop-color:#09307B"/>
 				<stop  offset="1" style="stop-color:#00ECF9"/>
 			</linearGradient>
 			<circle class="st3" cx="36" cy="36" r="35"/>
 		</g>
 	</g>
-	<text transform="matrix(1 0 0 1 14.2965 52.1006)" class="st4 st5 st6"></text>
+	<g class="st4">
+		<path class="st5" d="M52.5,17.9c1.1,0,2,0.4,2.8,1.2s1.2,1.7,1.2,2.8v23.7c0,1.1-0.4,2-1.2,2.8c-0.8,0.8-1.7,1.2-2.8,1.2H18.2
+			c-1.1,0-2-0.4-2.8-1.2c-0.8-0.8-1.2-1.7-1.2-2.8V21.8c0-1.1,0.4-2,1.2-2.8c0.8-0.8,1.7-1.2,2.8-1.2H52.5z M51.2,25.8v-2.6L35.4,31
+			l-15.8-7.9v2.6l15.8,11.8L51.2,25.8z"/>
+	</g>
 </g>
 </svg>

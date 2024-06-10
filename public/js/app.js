@@ -93,7 +93,7 @@ const resetColorHrefsMenu = () => {
 const gotoScroll = (scroll) => {
     $('html,body').animate({
         scrollTop: $('div[data-scroll-destination="' + scroll + '"]').offset().top - 40
-    }, 1500, 'easeInOutQuint');
+    }, 'fast', 'easeOutQuad');
 }
 
 const toLocalString = (string) => {

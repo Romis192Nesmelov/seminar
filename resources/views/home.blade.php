@@ -2,8 +2,10 @@
 
 @section('content')
     <div id="fixed-bar">
-        <a data-scroll="home" href="#">@include('blocks.logo_block', ['id' => 'logo-small'])</a>
-        @include('blocks.navbar_block', ['id' => 'fixed-nav'])
+        <div class="container pb-0 d-flex justify-content-left align-items-center">
+            <a data-scroll="home" href="#">@include('blocks.logo_block', ['id' => 'logo-small'])</a>
+            @include('blocks.navbar_block', ['id' => 'fixed-nav'])
+        </div>
     </div>
     <x-section id="header" class="color">
         <div class="w-100 d-flex justify-content-lg-start justify-content-md-between align-items-center">
