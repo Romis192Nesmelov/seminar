@@ -2,7 +2,7 @@
 
 @section('content')
     <div id="fixed-bar">
-        <div class="container pb-0 ps-1 d-flex justify-content-lg-start justify-content-md-between justify-content-sm-between align-items-center">
+        <div class="container pb-0 ps-1 d-flex justify-content-between justify-content-lg-start align-items-center">
             <a data-scroll="home" href="#">@include('blocks.logo_block', ['id' => 'logo-small'])</a>
             @include('blocks.navbar_block', ['id' => 'fixed-nav'])
         </div>
@@ -17,6 +17,7 @@
                 <h1 class="mb-3 mb-lg-4">Стратегический семинар по искусственному интеллекту</h1>
                 <p class="mb-3 mb-lg-5">Откройте потенциал искусственного интеллекта в вашем бизнесе на уникальном стратегическом семинаре!</p>
                 @include('blocks.button_block',[
+                    'addClass' => 'd-none d-lg-block d-md-block',
                     'primary' => true,
                     'dataTarget' => 'request-modal',
                     'buttonText' => $settings->record_button_text
@@ -26,6 +27,12 @@
                     @include('blocks.header_logo_block',['logo' => 'logo_academy_white.svg','scroll' => 'academy'])
                     @include('blocks.header_logo_block',['logo' => 'logo_itm_white.svg','scroll' => 'academy'])
                 </div>
+                @include('blocks.button_block',[
+                    'addClass' => 'd-none d-sm-block mt-2',
+                    'primary' => true,
+                    'dataTarget' => 'request-modal',
+                    'buttonText' => $settings->record_button_text
+                ])
             </div>
             <div class="col-12 col-md-6 mt-4 mt-lg-0 mb-3 text-center">
                 <img class="w-100" src="{{ asset('images/header_image.png') }}">
@@ -41,7 +48,7 @@
             <div class="col-12 col-md-6">
                 <h1>О проекте</h1>
                 <p>Стремительный рост технологий <b>искусственного интеллекта (ИИ)</b> и в особенности генеративных (GPT) ИИ-моделей создаёт <b>огромные возможности</b> для бизнеса и общества, но также содержит в себе <b>существенные вызовы и угрозы</b> в случае отказа от реализации задачи практического применения ИИ.</p>
-                <p><b>Клуб ИТ-директоров 4CIO совместно с Президентской академией</b> (Российской академией народного хозяйства и государственной службы при Президенте Российской Федерации, РАНХиГС) разработали уникальную программу – <b>стратегический семинар по ИИ</b>, проведение которого позволит предметно ознакомиться с современными ИИ-решениями и практикой их использования, а также вместе с <b>ведущими экспертами рынка</b> в области цифровизации и ИИ <b>оценить потенциал применения ИИ в Вашей компании</b>. По результатам профессионального диалога будут <b>сформулированы основные стратегические инициативы и проекты в ИИ-сфере</b>, необходимые к запуску.</p>
+                <p><b>Клуб ИТ-директоров 4CIO совместно с Школой ИТ-менеджмента Президентской академии</b> (Российской академией народного хозяйства и государственной службы при Президенте Российской Федерации, РАНХиГС) разработали уникальную программу – <b>стратегический семинар по ИИ</b>, проведение которого позволит предметно ознакомиться с современными ИИ-решениями и практикой их использования, а также вместе с <b>ведущими экспертами рынка</b> в области цифровизации и ИИ <b>оценить потенциал применения ИИ в Вашей компании</b>. По результатам профессионального диалога будут <b>сформулированы основные стратегические инициативы и проекты в ИИ-сфере</b>, необходимые к запуску.</p>
             </div>
         </div>
         <hr>
@@ -171,7 +178,7 @@
     </x-section>
     <x-section class="color pb-4" data-scroll-destination="contacts">
         <div class="row">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-6">
                 <h1>Контакты</h1>
                 <p class="fs-lg-6 text-center text-md-start">
                     @include('blocks.phone_block',['phone' => $settings->contacts->main->phone])
@@ -180,30 +187,27 @@
                 <hr>
                 <div class="row">
                     <h2 class="text-light mb-4">Свяжитесь с нами!</h2>
-                    @for($i=0;$i<(count($settings->contacts->persons) > 2 ? 2 : count($settings->contacts->persons));$i++)
+                    @for($i=0;$i<count($settings->contacts->persons);$i++)
                         <div class="col-12 col-md-6 row mb-3">
-                            <div class="col-12 col-lg-4 mb-md-3">
+                            <div class="col-12 col-lg-4 mb-md-3 d-flex justify-content-center">
                                 <div class="photo-frame small"><img src="{{ asset('images/contacts/contact'.($i+1).'.jpg') }}"></div>
                             </div>
                             <div class="col-12 col-lg-8 d-flex flex-column justify-content-center">
-                                <div class="text-top text-lg-start">{{ $settings->contacts->persons[$i]->family.' '.$settings->contacts->persons[$i]->name }}</div>
-                                <div class="text-bottom text-lg-start mb-0">
-                                    {{ $settings->contacts->persons[$i]->title }}
-                                    <div>
-                                        <a href="https://wa.me/{{ $settings->contacts->persons[$i]->whatsapp }}" target="_blank">
-                                            <img class="messenger-icon me-1" src="{{ asset('images/whatsapp_icon.svg') }}"/>
-                                        </a>
-                                        <a href="https://telegram.im/{{ $settings->contacts->persons[$i]->telegram }}" target="_blank">
-                                            <img class="messenger-icon" src="{{ asset('images/telegram_icon.svg') }}"/>
-                                        </a>
-                                    </div>
+                                <div class="d-flex justify-content-center justify-content-lg-start align-items-center">
+                                    <div class="contact-person">{{ $settings->contacts->persons[$i]->family.' '.$settings->contacts->persons[$i]->name }}</div>
+                                    <a href="https://wa.me/{{ $settings->contacts->persons[$i]->whatsapp }}" target="_blank">
+                                        <img class="messenger-icon" src="{{ asset('images/whatsapp_icon.svg') }}"/>
+                                    </a>
+                                    <a href="https://telegram.im/{{ $settings->contacts->persons[$i]->telegram }}" target="_blank">
+                                        <img class="messenger-icon" src="{{ asset('images/telegram_icon.svg') }}"/>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     @endfor
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6">
                 <div class="rounded-frame form w-100 p-4 bg-light">
                     <form id="request-form-contacts" class="w-100" action="{{ route('online_request') }}" method="post">
                         @csrf

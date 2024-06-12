@@ -16,10 +16,6 @@ hr {
     opacity: 1;
 }
 
-ol, ul {
-    padding-left: 0;
-}
-
 .error {
     color: red;
 }
@@ -108,6 +104,16 @@ p:last-child {
 
 #logos {
     width: clamp(300px, 20vw, 400px);
+    display: flex;
+    align-items: center;
+}
+
+#logos > div {
+    text-align: left;
+}
+
+#logos > div:last-child img {
+    width: 65% !important;
 }
 
 #logos img {
@@ -305,6 +311,7 @@ p:last-child {
 }
 
 .photo-frame.small {
+    width: 100%;
     border: 3px solid transparent;
     box-shadow: 3px 3px 0 rgba(0, 0, 0, .3);
     margin: 0;
@@ -383,10 +390,15 @@ p:last-child {
     background-clip: padding-box, border-box;
 }
 
+.contact-person {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
 .messenger-icon {
     width: 35px;
     height: 35px;
-    margin-top: 3px;
+    margin-right: 5px;
 }
 
 #footer {
@@ -460,6 +472,11 @@ p:last-child {
     .owl-nav button {
         width: 10px;
         height: 60px;
+    }
+
+    .messenger-icon {
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -559,9 +576,17 @@ p:last-child {
         margin: auto;
     }
 
+    #logos > div {
+        text-align: center;
+    }
+
     #logos img {
         width: 50%;
-        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    #logos > div:last-child img {
+        width: 30% !important;
     }
 
     #header p {
@@ -588,6 +613,25 @@ p:last-child {
 
     #policy-modal .modal-dialog {
         max-width: 95%;
+    }
+
+    .contact-person {
+        font-size: 18px;
+    }
+
+    .messenger-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    #footer {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 310px)  {
+    #footer {
+        font-size: 8px;
     }
 }
 
@@ -637,5 +681,9 @@ p:last-child {
 
     .icon img {
         width: 70%;
+    }
+
+    #footer {
+        font-size: 5%;
     }
 }
