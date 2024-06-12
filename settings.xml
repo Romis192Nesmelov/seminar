@@ -3,7 +3,7 @@
     <site_title>Ai Seminar</site_title>
     <record_button_text>Оставить заявку</record_button_text>
     <form_request_head>Форма обратной связи</form_request_head>
-    <footer_text>ООО Автоматизированные технологии и сервисы</footer_text>
+    <footer_text>ООО «Автоматизированные технологии и сервисы»</footer_text>
     <content>
         <icons>
             <top>Уникальная</top>
@@ -99,7 +99,7 @@
         </main>
         <persons>
             <name>Сергей</name>
-            <family>Кирюшин</family>
+            <family></family>
             <title>Эксперт по ИТ и цифровизации</title>
             <telegram>@sergey</telegram>
             <whatsapp>+79251001112</whatsapp>

@@ -179,6 +179,7 @@
                 </p>
                 <hr>
                 <div class="row">
+                    <h2 class="text-light mb-4">Свяжитесь с нами!</h2>
                     @for($i=0;$i<(count($settings->contacts->persons) > 2 ? 2 : count($settings->contacts->persons));$i++)
                         <div class="col-12 col-md-6 row mb-3">
                             <div class="col-12 col-lg-4 mb-md-3">
