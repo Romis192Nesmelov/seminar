@@ -178,7 +178,7 @@
     </x-section>
     <x-section class="color pb-4" data-scroll-destination="contacts">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-8 col-md-6">
                 <h1>Контакты</h1>
                 <p class="fs-lg-6 text-center text-md-start">
                     @include('blocks.phone_block',['phone' => $settings->contacts->main->phone])
@@ -207,7 +207,7 @@
                     @endfor
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-4 col-md-6">
                 <div class="rounded-frame form w-100 p-4 bg-light">
                     <form id="request-form-contacts" class="w-100" action="{{ route('online_request') }}" method="post">
                         @csrf
