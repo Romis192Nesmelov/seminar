@@ -2,7 +2,7 @@
 
 @section('content')
     <div id="fixed-bar">
-        <div class="container pb-0 d-flex justify-content-lg-start justify-content-md-between justify-content-sm-between align-items-center">
+        <div class="container pb-0 ps-1 d-flex justify-content-lg-start justify-content-md-between justify-content-sm-between align-items-center">
             <a data-scroll="home" href="#">@include('blocks.logo_block', ['id' => 'logo-small'])</a>
             @include('blocks.navbar_block', ['id' => 'fixed-nav'])
         </div>
