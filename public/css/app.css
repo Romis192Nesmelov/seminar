@@ -135,11 +135,11 @@ p:last-child {
 .logo-about {
     width: 100%;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
 }
 
 .logo-about img {
-    width: 30%;
+    width: 40%;
 }
 
 #fixed-bar {
