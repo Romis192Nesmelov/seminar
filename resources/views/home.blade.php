@@ -28,7 +28,7 @@
                     @include('blocks.header_logo_block',['logo' => 'logo_itm_white.svg','scroll' => 'academy'])
                 </div>
                 @include('blocks.button_block',[
-                    'addClass' => 'd-none d-sm-block mt-2',
+                    'addClass' => 'd-block d-md-none mt-2',
                     'primary' => true,
                     'dataTarget' => 'request-modal',
                     'buttonText' => $settings->record_button_text
